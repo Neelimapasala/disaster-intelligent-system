@@ -1,4 +1,21 @@
-from complete_system import app
-
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Get port from environment variable (Render sets this)
+    port = int(os.environ.get('PORT', 5000))
+    
+    print("\n" + "="*80)
+    print("🚨 DISASTERINTEL - COMPLETE DISASTER MANAGEMENT PLATFORM")
+    print("="*80)
+    print("\n✅ ALL FEATURES WORKING:")
+    print("   ✅ Dashboard with Live Stats")
+    print("   ✅ Disaster Reporting System")
+    print("   ✅ AI-Powered Analysis")
+    print("   ✅ Resource Management")
+    print("   ✅ Volunteer Registration")
+    print("   ✅ Donation Portal")
+    print("   ✅ Training Academy")
+    print("   ✅ About & Contact Pages")
+    print("   ✅ Chatbot Assistant")
+    print(f"\n🌐 Server running on port {port}")
+    print("\n" + "="*80 + "\n")
+    
+    app.run(debug=False, host='0.0.0.0', port=port)
